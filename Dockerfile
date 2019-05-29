@@ -16,7 +16,7 @@ RUN a2enmod rewrite
 COPY misc/php.ini /usr/local/etc/php/
 COPY misc/000-default.conf /etc/apache2/sites-available/
 
-COPY misc/settings.xml /var/www/seeddms50x/seeddms-5.0.5/conf/settings.xml
+COPY misc/settings.xml /var/www/seeddms50x/seeddms-5.1.10/conf/settings.xml
 RUN chown -R www-data:www-data /var/www/seeddms50x/
 
-RUN touch /var/www/seeddms50x/seeddms-5.0.5/conf/ENABLE_INSTALL_TOOL
+RUN touch /var/www/seeddms50x/seeddms-5.1.10/conf/ENABLE_INSTALL_TOOL
