@@ -5,7 +5,7 @@
 docker run -d -ti \
 	--name seeddms \
 	-p 8082:80 \
-	ludwigprager/docker-seeddms:latest
+	fit22/docker-seeddms:latest
 ~~~
 
 ## 2. basic setup
@@ -16,7 +16,7 @@ Assuming docker host's address is 172.17.0.1, use the following URL for basic se
 Navigate to 'Start installation', select 'Create database tables' and press 'Apply'.
 ## 3. remove the install-trigger
 ~~~
-docker exec -ti seeddms rm /var/www/seeddms50x/seeddms-5.0.5/conf/ENABLE_INSTALL_TOOL
+docker exec -ti seeddms rm /var/www/seeddms51x/seeddms-5.1.10/conf/ENABLE_INSTALL_TOOL
 ~~~
 and execute 
 ~~~
@@ -36,7 +36,7 @@ docker build -t seeddms:1 .
 docker stop seeddms
 docker rm seeddms
 
-docker exec seeddms tar -C / -cf - /var/www/seeddms50x/ | xz > seeddms-backup.tar.xz
+docker exec seeddms tar -C / -cf - /var/www/seeddms51x/ | xz > seeddms-backup.tar.xz
 ~~~
 
 
@@ -59,5 +59,5 @@ docker exec -ti seeddms /bin/bash
 
 ### switch on install mode again
 ~~~
-docker exec -ti seeddms touch /var/www/seeddms50x/seeddms-5.0.5/conf/ENABLE_INSTALL_TOOL
+docker exec -ti seeddms touch /var/www/seeddms50x/seeddms-5.1.10/conf/ENABLE_INSTALL_TOOL
 ~~~
