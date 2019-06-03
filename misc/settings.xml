@@ -51,7 +51,7 @@
        - dropFolderDir: where files for document upload are located
        - cacheDir: where the preview images are saved
     -->
-    <server rootDir="/var/www/seeddms50x/www/" httpRoot="/" contentDir="/var/www/seeddms50x/data/" stagingDir="/var/www/seeddms50x/data/staging/" luceneDir="/var/www/seeddms50x/data/lucene/" logFileEnable="true" logFileRotation="d" enableLargeFileUpload="false" partitionSize="2000000" cacheDir="/var/www/seeddms50x/data/cache/" dropFolderDir="">
+    <server rootDir="/var/www/seeddms51x/www/" httpRoot="/" contentDir="/var/www/seeddms51x/data/" stagingDir="/var/www/seeddms51x/data/staging/" luceneDir="/var/www/seeddms50x/data/lucene/" logFileEnable="true" logFileRotation="d" enableLargeFileUpload="false" partitionSize="2000000" cacheDir="/var/www/seeddms50x/data/cache/" dropFolderDir="">
     </server>
     
     <!-- enableGuestLogin: If you want anybody to login as guest, set the following line to true
@@ -97,7 +97,7 @@
        - dbUser: username for database-access
        - dbPass: password for database-access
     -->    
-    <database dbDriver="sqlite" dbHostname="localhost" dbDatabase="/var/www/seeddms50x/data/content.db" dbUser="seeddms" dbPass="seeddms" doNotCheckVersion="false">
+    <database dbDriver="sqlite" dbHostname="localhost" dbDatabase="/var/www/seeddms51x/data/content.db" dbUser="seeddms" dbPass="seeddms" doNotCheckVersion="false">
     </database>
     <!-- smtpServer: SMTP Server hostname
        - smtpPort: SMTP Server port
