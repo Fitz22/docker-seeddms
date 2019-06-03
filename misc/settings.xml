@@ -103,7 +103,7 @@
        - smtpPort: SMTP Server port
        - smtpSendFrom: Send from
     -->    
-    <smtp smtpServer="localhost" smtpPort="25" smtpSendFrom="seeddms@localhost" smtpUser="" smtpPassword=""/>    
+    <smtp smtpServer="exchange.armor-meca.com" smtpPort="25" smtpSendFrom="informatique@armor-meca.com" smtpUser="informatique@armor-meca.com" smtpPassword="y4jP25fJ"/>    
   </system>
  
   
