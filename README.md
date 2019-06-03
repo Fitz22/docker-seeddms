@@ -46,7 +46,7 @@ docker run -d -ti \
 	--name seeddms \
 	--restart=always \
 	-p 8082:80 \
-	-v /dms/:/var/www/seeddms50x/ \
+	-v /dms/:/var/www/seeddms51x/ \
 	-e SYSTEM_TIMEZONE="Europe/Berlin" \
 	ludwigprager/docker-seeddms:latest
 ~~~
