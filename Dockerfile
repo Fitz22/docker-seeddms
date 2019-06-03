@@ -9,7 +9,7 @@ RUN docker-php-ext-install gd
 
 RUN apt-get install -q -y php-pear  php5-gd php5-sqlite poppler-utils catdoc
 
-ADD misc/seeddms-quickstart-5.1.10 (1).tar.gz /var/www/
+ADD misc/seeddms-quickstart-5.1.10.tar.gz /var/www/
 
 RUN a2enmod rewrite
 
